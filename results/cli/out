@@ -1,0 +1,391 @@
+please, select what to do:
+0 - init tables and load data
+1 - count flights per carrier
+2 - count flights by NYC in June
+3 - count most 5 busy airports in summer
+4 - count carrier with biggest number of flights
+other - other hql to execute
+quit - quit
+./hql/query_00_init_tables_load_data.hql
+starting hive (engine is tez) to execute HQL from ./hql/query_00_init_tables_load_data.hql...
+WARNING: Use "yarn jar" to launch YARN applications.
+
+Logging initialized using configuration in file:/etc/hive/2.4.0.0-169/0/hive-log4j.properties
+OK
+Time taken: 2.041 seconds
+OK
+Time taken: 5.355 seconds
+OK
+Time taken: 0.319 seconds
+OK
+Time taken: 0.212 seconds
+OK
+Time taken: 0.182 seconds
+OK
+Time taken: 0.171 seconds
+OK
+Time taken: 0.163 seconds
+OK
+Time taken: 0.165 seconds
+Query ID = root_20180809082126_ae824351-3816-4ab0-8d05-ead71d3ea6ee
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (Executing on YARN cluster with App id application_1533549737397_0054)
+
+Map 1: -/-	
+Map 1: 0/1	
+Map 1: 0(+1)/1	
+Map 1: 1/1	
+Loading data to table aero_sample246.carrier
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/carrier/000000_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Table aero_sample246.carrier stats: [numFiles=1, numRows=1491, totalSize=16223, rawDataSize=281799]
+OK
+Time taken: 8.989 seconds
+Query ID = root_20180809082135_f99ec21c-cea7-4d22-8f6f-f61696bc7a4c
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (Executing on YARN cluster with App id application_1533549737397_0054)
+
+Map 1: 0(+1)/1	
+Map 1: 1/1	
+Loading data to table aero_sample246.airport
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/airport/000000_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Table aero_sample246.airport stats: [numFiles=1, numRows=3376, totalSize=104332, rawDataSize=1579968]
+OK
+Time taken: 3.21 seconds
+Query ID = root_20180809082139_618691a6-e2d7-49e8-b311-dcbe3dd1cebd
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (Executing on YARN cluster with App id application_1533549737397_0054)
+
+Map 1: 0(+1)/13	
+Map 1: 0(+1)/13	
+Map 1: 0(+2)/13	
+Map 1: 0(+4)/13	
+Map 1: 0(+7)/13	
+Map 1: 0(+8)/13	
+Map 1: 0(+8)/13	
+Map 1: 0(+8)/13	
+Map 1: 0(+8)/13	
+Map 1: 0(+8)/13	
+Map 1: 0(+8)/13	
+Map 1: 0(+8)/13	
+Map 1: 1(+7)/13	
+Map 1: 1(+8)/13	
+Map 1: 1(+8)/13	
+Map 1: 1(+8)/13	
+Map 1: 2(+7)/13	
+Map 1: 2(+8)/13	
+Map 1: 4(+6)/13	
+Map 1: 4(+8)/13	
+Map 1: 7(+5)/13	
+Map 1: 8(+4)/13	
+Map 1: 8(+5)/13	
+Map 1: 8(+5)/13	
+Map 1: 8(+5)/13	
+Map 1: 9(+4)/13	
+Map 1: 10(+3)/13	
+Map 1: 11(+2)/13	
+Map 1: 12(+1)/13	
+Map 1: 13/13	
+Loading data to table aero_sample246.flight
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/flight/000000_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/flight/000001_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/flight/000002_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/flight/000003_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/flight/000004_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/flight/000005_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/flight/000006_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/flight/000007_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/flight/000008_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/flight/000009_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/flight/000010_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/flight/000011_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Moved: 'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/aero_sample246.db/flight/000012_0' to trash at: hdfs://sandbox.hortonworks.com:8020/user/root/.Trash/Current
+Table aero_sample246.flight stats: [numFiles=13, numRows=7453215, totalSize=96644921, rawDataSize=5153487988]
+OK
+Time taken: 54.223 seconds
+...execution of ./hql/query_00_init_tables_load_data.hql finished.
+please, select what to do:
+0 - init tables and load data
+1 - count flights per carrier
+2 - count flights by NYC in June
+3 - count most 5 busy airports in summer
+4 - count carrier with biggest number of flights
+other - other hql to execute
+quit - quit
+starting hive (engine is tez) to execute HQL from ./hql/query_01_flights_per_carrier.hql...
+WARNING: Use "yarn jar" to launch YARN applications.
+
+Logging initialized using configuration in file:/etc/hive/2.4.0.0-169/0/hive-log4j.properties
+OK
+Time taken: 1.926 seconds
+Query ID = root_20180809082307_0d04341c-4c53-48a9-aa2a-e9f14787540b
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (Executing on YARN cluster with App id application_1533549737397_0055)
+
+Map 1: -/-	Reducer 2: 0/77	
+Map 1: 0/7	Reducer 2: 0/77	
+Map 1: 0/7	Reducer 2: 0/77	
+Map 1: 0(+1)/7	Reducer 2: 0/77	
+Map 1: 0(+2)/7	Reducer 2: 0/77	
+Map 1: 0(+4)/7	Reducer 2: 0/77	
+Map 1: 0(+5)/7	Reducer 2: 0/77	
+Map 1: 0(+6)/7	Reducer 2: 0/77	
+Map 1: 0(+7)/7	Reducer 2: 0/77	
+Map 1: 0(+7)/7	Reducer 2: 0/77	
+Map 1: 1(+6)/7	Reducer 2: 0/77	
+Map 1: 2(+5)/7	Reducer 2: 0(+1)/77	
+Map 1: 3(+4)/7	Reducer 2: 0(+2)/77	
+Map 1: 4(+3)/7	Reducer 2: 0(+3)/77	
+Map 1: 4(+3)/7	Reducer 2: 0(+4)/77	
+Map 1: 5(+2)/7	Reducer 2: 0(+5)/77	
+Map 1: 6(+1)/7	Reducer 2: 0(+6)/77	
+Map 1: 7/7	Reducer 2: 0(+6)/77	
+Map 1: 7/7	Reducer 2: 0(+7)/77	
+Map 1: 7/7	Reducer 2: 2(+5)/77	
+Map 1: 7/7	Reducer 2: 2(+7)/77	
+Map 1: 7/7	Reducer 2: 4(+6)/77	
+Map 1: 7/7	Reducer 2: 7(+7)/77	
+Map 1: 7/7	Reducer 2: 8(+7)/77	
+Map 1: 7/7	Reducer 2: 12(+5)/77	
+Map 1: 7/7	Reducer 2: 16(+5)/77	
+Map 1: 7/7	Reducer 2: 18(+7)/77	
+Map 1: 7/7	Reducer 2: 24(+3)/77	
+Map 1: 7/7	Reducer 2: 26(+5)/77	
+Map 1: 7/7	Reducer 2: 29(+6)/77	
+Map 1: 7/7	Reducer 2: 32(+6)/77	
+Map 1: 7/7	Reducer 2: 35(+4)/77	
+Map 1: 7/7	Reducer 2: 38(+5)/77	
+Map 1: 7/7	Reducer 2: 43(+4)/77	
+Map 1: 7/7	Reducer 2: 47(+6)/77	
+Map 1: 7/7	Reducer 2: 51(+5)/77	
+Map 1: 7/7	Reducer 2: 54(+4)/77	
+Map 1: 7/7	Reducer 2: 59(+4)/77	
+Map 1: 7/7	Reducer 2: 63(+4)/77	
+Map 1: 7/7	Reducer 2: 66(+7)/77	
+Map 1: 7/7	Reducer 2: 70(+7)/77	
+Map 1: 7/7	Reducer 2: 73(+4)/77	
+Map 1: 7/7	Reducer 2: 76(+1)/77	
+Map 1: 7/7	Reducer 2: 77/77	
+OK
+AQ	46360
+UA	490002
+XE	434773
+CO	323151
+US	485447
+9E	258851
+DL	475889
+FL	263159
+YV	294362
+AS	160185
+NW	414526
+OO	597882
+AA	633857
+WN	1168871
+HA	56175
+OH	233787
+EV	286234
+F9	97760
+MQ	540494
+B6	191450
+Time taken: 31.208 seconds, Fetched: 20 row(s)
+...execution of ./hql/query_01_flights_per_carrier.hql finished.
+please, select what to do:
+0 - init tables and load data
+1 - count flights per carrier
+2 - count flights by NYC in June
+3 - count most 5 busy airports in summer
+4 - count carrier with biggest number of flights
+other - other hql to execute
+quit - quit
+starting hive (engine is tez) to execute HQL from ./hql/query_02_flights_by_nyc_june.hql...
+WARNING: Use "yarn jar" to launch YARN applications.
+
+Logging initialized using configuration in file:/etc/hive/2.4.0.0-169/0/hive-log4j.properties
+OK
+Time taken: 1.877 seconds
+Query ID = root_20180809082406_d28ce691-d962-4a9a-bfea-f4ffd5e218a4
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (Executing on YARN cluster with App id application_1533549737397_0056)
+
+Map 1: -/-	Map 2: -/-	Map 5: -/-	Reducer 4: 0/1	
+Map 1: 0/1	Map 2: -/-	Map 5: 0/7	Reducer 4: 0/1	
+Map 1: 0/1	Map 2: 0/7	Map 5: 0/7	Reducer 4: 0/1	
+Map 1: 0/1	Map 2: 0/7	Map 5: 0/7	Reducer 4: 0/1	
+Map 1: 0/1	Map 2: 0/7	Map 5: 0/7	Reducer 4: 0/1	
+Map 1: 0/1	Map 2: 0/7	Map 5: 0(+3)/7	Reducer 4: 0/1	
+Map 1: 0(+1)/1	Map 2: 0/7	Map 5: 0(+3)/7	Reducer 4: 0/1	
+Map 1: 0(+1)/1	Map 2: 0/7	Map 5: 0(+4)/7	Reducer 4: 0/1	
+Map 1: 0(+1)/1	Map 2: 0/7	Map 5: 0(+5)/7	Reducer 4: 0/1	
+Map 1: 0(+1)/1	Map 2: 0(+1)/7	Map 5: 0(+6)/7	Reducer 4: 0/1	
+Map 1: 0(+1)/1	Map 2: 0(+1)/7	Map 5: 0(+6)/7	Reducer 4: 0/1	
+Map 1: 0(+1)/1	Map 2: 0(+1)/7	Map 5: 0(+6)/7	Reducer 4: 0/1	
+Map 1: 0/1	Map 2: 0(+1)/7	Map 5: 0(+6)/7	Reducer 4: 0/1	
+Map 1: 1/1	Map 2: 0(+1)/7	Map 5: 0(+6)/7	Reducer 4: 0/1	
+Map 1: 1/1	Map 2: 0(+2)/7	Map 5: 0(+6)/7	Reducer 4: 0/1	
+Map 1: 1/1	Map 2: 0(+4)/7	Map 5: 2(+4)/7	Reducer 4: 0/1	
+Map 1: 1/1	Map 2: 0(+5)/7	Map 5: 3(+3)/7	Reducer 4: 0/1	
+Map 1: 1/1	Map 2: 0(+5)/7	Map 5: 3(+2)/7	Reducer 4: 0/1	
+Map 1: 1/1	Map 2: 0(+6)/7	Map 5: 5(+1)/7	Reducer 4: 0/1	
+Map 1: 1/1	Map 2: 1(+5)/7	Map 5: 5(+1)/7	Reducer 4: 0/1	
+Map 1: 1/1	Map 2: 2(+4)/7	Map 5: 5(+1)/7	Reducer 4: 0/1	
+Map 1: 1/1	Map 2: 2(+4)/7	Map 5: 5(+2)/7	Reducer 4: 0/1	
+Map 1: 1/1	Map 2: 3(+4)/7	Map 5: 5(+2)/7	Reducer 4: 0(+1)/1	
+Map 1: 1/1	Map 2: 4(+3)/7	Map 5: 5(+2)/7	Reducer 4: 0(+1)/1	
+Map 1: 1/1	Map 2: 5(+2)/7	Map 5: 6(+1)/7	Reducer 4: 0(+1)/1	
+Map 1: 1/1	Map 2: 7/7	Map 5: 7/7	Reducer 4: 0(+1)/1	
+Map 1: 1/1	Map 2: 7/7	Map 5: 7/7	Reducer 4: 0/1	
+Map 1: 1/1	Map 2: 7/7	Map 5: 7/7	Reducer 4: 1/1	
+OK
+42575
+Time taken: 29.53 seconds, Fetched: 1 row(s)
+...execution of ./hql/query_02_flights_by_nyc_june.hql finished.
+please, select what to do:
+0 - init tables and load data
+1 - count flights per carrier
+2 - count flights by NYC in June
+3 - count most 5 busy airports in summer
+4 - count carrier with biggest number of flights
+other - other hql to execute
+quit - quit
+starting hive (engine is tez) to execute HQL from ./hql/query_03_busy_airports_summer.hql...
+WARNING: Use "yarn jar" to launch YARN applications.
+
+Logging initialized using configuration in file:/etc/hive/2.4.0.0-169/0/hive-log4j.properties
+OK
+Time taken: 1.744 seconds
+Query ID = root_20180809082457_b77f9eb4-df0e-4315-9d2e-c6ec3f7f76bc
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (Executing on YARN cluster with App id application_1533549737397_0057)
+
+Map 1: -/-	Map 2: -/-	Map 6: -/-	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 0/1	Map 2: 0/7	Map 6: 0/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 0/1	Map 2: 0/7	Map 6: 0/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 0/1	Map 2: 0/7	Map 6: 0(+1)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 0/1	Map 2: 0(+1)/7	Map 6: 0(+1)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 0/1	Map 2: 0(+1)/7	Map 6: 0(+3)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 0(+1)/1	Map 2: 0(+1)/7	Map 6: 0(+4)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 0(+1)/1	Map 2: 0(+1)/7	Map 6: 0(+5)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 0(+1)/1	Map 2: 0(+1)/7	Map 6: 0(+6)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 0(+1)/1	Map 2: 0(+1)/7	Map 6: 0(+6)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 0(+1)/1	Map 2: 0(+1)/7	Map 6: 0(+6)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 0/1	Map 2: 0(+1)/7	Map 6: 0(+6)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 0(+1)/7	Map 6: 0(+6)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 0(+2)/7	Map 6: 0(+6)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 1(+3)/7	Map 6: 1(+5)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 1(+4)/7	Map 6: 2(+4)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 1(+4)/7	Map 6: 3(+3)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 1(+5)/7	Map 6: 3(+3)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 2(+4)/7	Map 6: 5(+1)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 4(+2)/7	Map 6: 5(+1)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 5(+2)/7	Map 6: 6(+0)/7	Reducer 4: 0/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 5(+2)/7	Map 6: 6(+1)/7	Reducer 4: 0(+5)/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 7/7	Map 6: 7/7	Reducer 4: 0(+5)/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 7/7	Map 6: 7/7	Reducer 4: 0(+8)/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 7/7	Map 6: 7/7	Reducer 4: 1(+8)/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 7/7	Map 6: 7/7	Reducer 4: 4(+6)/10	Reducer 5: 0/1	
+Map 1: 1/1	Map 2: 7/7	Map 6: 7/7	Reducer 4: 5(+5)/10	Reducer 5: 0(+1)/1	
+Map 1: 1/1	Map 2: 7/7	Map 6: 7/7	Reducer 4: 9(+1)/10	Reducer 5: 0(+1)/1	
+Map 1: 1/1	Map 2: 7/7	Map 6: 7/7	Reducer 4: 10/10	Reducer 5: 0(+1)/1	
+Map 1: 1/1	Map 2: 7/7	Map 6: 7/7	Reducer 4: 10/10	Reducer 5: 1/1	
+OK
+William B Hartsfield-Atlanta Intl	220506
+Chicago O'Hare International	192043
+Dallas-Fort Worth International	152380
+Denver Intl	126196
+Los Angeles International	122914
+Time taken: 32.174 seconds, Fetched: 5 row(s)
+...execution of ./hql/query_03_busy_airports_summer.hql finished.
+please, select what to do:
+0 - init tables and load data
+1 - count flights per carrier
+2 - count flights by NYC in June
+3 - count most 5 busy airports in summer
+4 - count carrier with biggest number of flights
+other - other hql to execute
+quit - quit
+starting hive (engine is tez) to execute HQL from ./hql/query_04_carrier_with_biggest_flights.hql...
+WARNING: Use "yarn jar" to launch YARN applications.
+
+Logging initialized using configuration in file:/etc/hive/2.4.0.0-169/0/hive-log4j.properties
+OK
+Time taken: 1.878 seconds
+Query ID = root_20180809082556_dd656672-869e-4086-838e-1d685c32c486
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (Executing on YARN cluster with App id application_1533549737397_0058)
+
+Map 1: -/-	Reducer 2: 0/77	Reducer 3: 0/1	
+Map 1: 0/7	Reducer 2: 0/77	Reducer 3: 0/1	
+Map 1: 0/7	Reducer 2: 0/77	Reducer 3: 0/1	
+Map 1: 0(+1)/7	Reducer 2: 0/77	Reducer 3: 0/1	
+Map 1: 0(+2)/7	Reducer 2: 0/77	Reducer 3: 0/1	
+Map 1: 0(+3)/7	Reducer 2: 0/77	Reducer 3: 0/1	
+Map 1: 0(+4)/7	Reducer 2: 0/77	Reducer 3: 0/1	
+Map 1: 0(+5)/7	Reducer 2: 0/77	Reducer 3: 0/1	
+Map 1: 0(+6)/7	Reducer 2: 0/77	Reducer 3: 0/1	
+Map 1: 0(+7)/7	Reducer 2: 0/77	Reducer 3: 0/1	
+Map 1: 0(+7)/7	Reducer 2: 0/77	Reducer 3: 0/1	
+Map 1: 1(+6)/7	Reducer 2: 0/77	Reducer 3: 0/1	
+Map 1: 2(+5)/7	Reducer 2: 0/77	Reducer 3: 0/1	
+Map 1: 2(+5)/7	Reducer 2: 0(+1)/77	Reducer 3: 0/1	
+Map 1: 2(+5)/7	Reducer 2: 0(+2)/77	Reducer 3: 0/1	
+Map 1: 3(+4)/7	Reducer 2: 0(+2)/77	Reducer 3: 0/1	
+Map 1: 4(+3)/7	Reducer 2: 0(+2)/77	Reducer 3: 0/1	
+Map 1: 5(+2)/7	Reducer 2: 0(+4)/77	Reducer 3: 0/1	
+Map 1: 5(+2)/7	Reducer 2: 0(+5)/77	Reducer 3: 0/1	
+Map 1: 6(+1)/7	Reducer 2: 0(+6)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 1(+6)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 2(+6)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 7(+7)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 12(+4)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 14(+7)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 19(+7)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 20(+7)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 24(+7)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 28(+6)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 32(+6)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 34(+6)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 38(+7)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 43(+7)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 45(+7)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 49(+7)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 53(+5)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 56(+7)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 60(+7)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 64(+7)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 67(+6)/77	Reducer 3: 0/1	
+Map 1: 7/7	Reducer 2: 72(+4)/77	Reducer 3: 0(+1)/1	
+Map 1: 7/7	Reducer 2: 76(+1)/77	Reducer 3: 0(+1)/1	
+Map 1: 7/7	Reducer 2: 77/77	Reducer 3: 0(+1)/1	
+Map 1: 7/7	Reducer 2: 77/77	Reducer 3: 1/1	
+OK
+WN	1168871
+Time taken: 29.348 seconds, Fetched: 1 row(s)
+...execution of ./hql/query_04_carrier_with_biggest_flights.hql finished.
+please, select what to do:
+0 - init tables and load data
+1 - count flights per carrier
+2 - count flights by NYC in June
+3 - count most 5 busy airports in summer
+4 - count carrier with biggest number of flights
+other - other hql to execute
+quit - quit
